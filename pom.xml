@@ -24,8 +24,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <dwl.note.version>1.0</dwl.note.version>
-        <spring.boot.version>2.4.1</spring.boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -41,7 +39,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.4.1</version>
             </plugin>
         </plugins>
     </build>
