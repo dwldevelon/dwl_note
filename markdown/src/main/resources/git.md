@@ -11,5 +11,7 @@ git add .
 git commit -m 'message'
 git push
 git pull
+git rm -rf .idea
+git rm dwl_not.iml
 ```
 
