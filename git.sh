@@ -1,5 +1,4 @@
 git add .
-time2=$(date "+%Y%m%d%H%M%S")
-git commit -m time2
+git commit -m 'default_commit'
 git pull
 git push
