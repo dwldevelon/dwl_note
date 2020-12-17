@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 public class TestUtils {
+
     private static final ObjectMapper OBJECT_MAPPER;
     static {
         OBJECT_MAPPER = new ObjectMapper();
@@ -50,7 +51,6 @@ public class TestUtils {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
 }
