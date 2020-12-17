@@ -19,18 +19,30 @@
     <modules>
         <module>markdown</module>
         <module>model</module>
+        <module>dwl_test</module>
     </modules>
 
 
     <properties>
+        <application.version>1.0</application.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--        <java.version>1.8</java.version>-->
+<!--        <resource.delimiter>@</resource.delimiter>-->
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>dwl</groupId>
+                <artifactId>dwl_test</artifactId>
+                <version>${application.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
