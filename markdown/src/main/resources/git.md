@@ -31,6 +31,9 @@ git pull origin master
 
 git config --global user.email wenlong.ding@zkj.com
 git config --global user.name wenlong.ding
+git config --global --list
 git config --list
+
+git branch --set-upstream-to=origin/dev_0.0.2 dev_0.0.2
 ```
 
