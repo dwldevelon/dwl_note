@@ -21,6 +21,7 @@
         <module>model</module>
         <module>dwl_test</module>
         <module>j2e</module>
+        <module>foo</module>
     </modules>
 
 
