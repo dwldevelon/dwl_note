@@ -10,23 +10,25 @@ public class MyTest {
 
     @SuppressWarnings("all")
     public static void main(String[] args) throws InterruptedException {
+        int[][] isConnected = {{1,1,0},{1,1,0},{0,0,1}};
+        System.out.println(findCircleNum(isConnected));
+        int[][] isConnected2 = {{1,0,0},{0,1,0},{0,0,1}};
+        System.out.println(findCircleNum(isConnected2));
+    }
 
-        Thread t1 = new Thread(()->{
-            synchronized (LOCK){
-                try {
-                    System.out.println("---准备阻塞线程---" + Thread.currentThread().getName());
-                    LOCK.wait();
-                    System.out.println("---线程阻塞结束---" + Thread.currentThread().getName());
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+    public static int findCircleNum(int[][] isConnected) {
+        if(isConnected.length == 0){
+            return 0;
+        }
+        int result = isConnected.length;
+        for(int i = 0 ; i < result ; i ++){
+            for(int j = i + 1 ; j < result ; j ++){
+                if(isConnected[i][j] == 1 && i != j){
+                    result --;
                 }
             }
-        });
-        t1.start();
-
-        synchronized (LOCK) {
-            LOCK.notify();
         }
-        System.out.println("---main end---" );
+        return result;
     }
+
 }

@@ -15,13 +15,14 @@
         <version>2.4.1</version>
     </parent>
 
-
     <modules>
         <module>markdown</module>
         <module>model</module>
         <module>dwl_test</module>
         <module>j2e</module>
         <module>foo</module>
+        <module>spring-boot</module>
+        <module>hutool-demo</module>
     </modules>
 
 
@@ -35,6 +36,8 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <hutool.version> 5.5.7 </hutool.version>
+        <commons-compress-version>1.18</commons-compress-version>
     </properties>
 
 
@@ -44,6 +47,16 @@
                 <groupId>dwl</groupId>
                 <artifactId>dwl_test</artifactId>
                 <version>${application.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>${commons-compress-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

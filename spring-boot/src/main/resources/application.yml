@@ -1,0 +1,13 @@
+my-failure-analyzer:
+  trigger:
+    enable: false
+
+# 启动延迟初始化bean
+spring:
+  main:
+    lazy-initialization: true
+  banner:
+    location: file:D:/config/banner_hjbj.txt
+  application:
+    admin:
+      enabled: true

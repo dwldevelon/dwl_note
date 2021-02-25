@@ -184,5 +184,9 @@ maven插件仓库配置
 
 在pom.xml中配置插件的时候，如果是官方的插件，可以省略groupId。
 
-`mvn help:effective-pom`
+`mvn help:effective-pom`  
+
+
+在maven依赖情况下dependencyManagement的优先级高于 dependencies，
+版本仲裁的版本号优先级高于依赖传递。
 
