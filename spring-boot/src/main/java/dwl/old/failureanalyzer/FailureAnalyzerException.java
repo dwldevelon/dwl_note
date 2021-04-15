@@ -1,4 +1,4 @@
-package dwl.failureanalyzer;
+package dwl.old.failureanalyzer;
 
 /**
  * @author wenlong.ding

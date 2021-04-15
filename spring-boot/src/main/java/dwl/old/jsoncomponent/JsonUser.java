@@ -1,4 +1,4 @@
-package dwl.jsoncomponent;
+package dwl.old.jsoncomponent;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

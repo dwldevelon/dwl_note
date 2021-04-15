@@ -9,11 +9,11 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 
-    <parent>
+<!--    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>2.4.1</version>
-    </parent>
+    </parent>-->
 
     <modules>
         <module>markdown</module>
@@ -32,6 +32,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <!--        <java.version>1.8</java.version>-->
 <!--        <resource.delimiter>@</resource.delimiter>-->
+
+        <spring.boot.version>2.2.13.RELEASE</spring.boot.version>
+        <springcloud.version>Hoxton.SR10</springcloud.version>
+        <sprigcloud.alibaba.version>2.2.1.RELEASE</sprigcloud.alibaba.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,7 +46,35 @@
 
 
     <dependencyManagement>
+
+
+
         <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${springcloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${sprigcloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>dwl</groupId>
                 <artifactId>dwl_test</artifactId>

@@ -1,9 +1,8 @@
-package dwl.failureanalyzer;
+package dwl.old.failureanalyzer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.diagnostics.AbstractFailureAnalyzer;
 import org.springframework.boot.diagnostics.FailureAnalysis;
-import org.springframework.boot.diagnostics.FailureAnalyzer;
 
 /**
 

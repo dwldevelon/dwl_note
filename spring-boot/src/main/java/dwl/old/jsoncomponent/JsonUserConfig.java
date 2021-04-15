@@ -1,4 +1,4 @@
-package dwl.jsoncomponent;
+package dwl.old.jsoncomponent;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;

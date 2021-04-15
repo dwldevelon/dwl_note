@@ -1,8 +1,8 @@
-package dwl.controller;
+package dwl.old.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dwl.httpmessage.HttpMessageUserInfo;
-import dwl.jsoncomponent.JsonUser;
+import dwl.old.httpmessage.HttpMessageUserInfo;
+import dwl.old.jsoncomponent.JsonUser;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

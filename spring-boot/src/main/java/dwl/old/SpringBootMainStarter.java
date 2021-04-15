@@ -1,4 +1,4 @@
-package dwl;
+package dwl.old;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootMainStarter {
     public static void main(String[] args) {
 //        SpringApplication springApplication = new SpringApplication();
-//        springApplication.addListeners();
+//        springApplication.addListeners();   nack message requeue true Fanout
         SpringApplication
                 .run(SpringBootMainStarter.class,args);
     }
